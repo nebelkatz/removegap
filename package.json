@@ -1,0 +1,24 @@
+{
+  "name": "removegap",
+  "version": "1.0.0",
+  "description": "\"Browser-Extension ersetzt Genderstile mit Sonderzeichen mit der gewünschten, alternativen Form\"",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@nebelkatz.github.com:nebelkatz/removegap.git"
+  },
+  "author": "nebelkatz",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-zip": "^4.2.0"
+  },
+  "overrides": {
+    "chockidar":"^3.5.3",
+    "glob-parent":"^6.0.2"
+  }
+}

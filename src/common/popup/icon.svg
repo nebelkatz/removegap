@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="blue"/>
+      <stop offset="1" stop-color="#ff40ff"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(210.7914 -9.708602) rotate(60) scale(1204.8344)"/>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_4">
+      <title>Layer 4</title>
+      <g id="Graphic_9">
+        <path d="M 335.6 71 L 688.4 71 L 953 335.6 L 953 688.4 L 688.4 953 L 335.6 953 L 71 688.4 L 71 335.6 Z" fill="url(#Obj_Gradient)"/>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_3">
+      <title>Layer 3</title>
+      <g id="Graphic_8">
+        <path d="M 791.5 543.05556 L 586.5333 543.05556 L 732.49444 689.0167 L 689.0167 732.49444 L 543.05556 586.5333 L 543.05556 791.5 L 480.94444 791.5 L 480.94444 583.4278 L 334.98333 729.3889 L 291.50556 685.9111 L 431.25556 543.05556 L 232.5 543.05556 L 232.5 480.94444 L 437.46667 480.94444 L 291.50556 334.98333 L 334.98333 291.50556 L 480.94444 437.46667 L 480.94444 232.5 L 543.05556 232.5 L 543.05556 431.25556 L 685.9111 288.4 L 729.3889 334.98333 L 583.4278 480.94444 L 791.5 480.94444 Z" fill="white"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+<!--
+  popup.html
+
+  Copyright 2022 nebelkatz
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>RemoveGap</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <img src="icon.svg" alt="icon" width="20" height="20" class="icon"/>
+                <span class="fs-4">RemoveGap</span>
+            </a>
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+                <div id="liveToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                      <div class="toast-body">
+                        Einstellungen gespeichert.
+                      </div>
+                      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                  </div>
+                </div>
+            <hr>
+            <div class="mb-2">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="mainSwitch" checked>
+                    <label class="form-check-label" for="mainSwitch">Aktiv</label>
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="mark" checked>
+                    <label class="form-check-label" for="mark">Ersetzungen markieren</label>
+                </div>
+            </div>
+            <div class="mb-2">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="notifications" checked>
+                    <label class="form-check-label" for="notifications">Notifikationen</label>
+                </div>
+            </div>
+            <div class="mb-1">
+                <p>Genderstile mit Sonderzeichen (:/*_) im Text <strong>ersetzen durch:</strong></p>
+            </div>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Ersetzungsmodus" name="replaceMode" id="replaceMode">
+                    <option selected value="male">männliche Form</option>
+                    <option value="female">weibliche Form</option>
+                    <option value="pair">paarweise Form</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <button id="refresh" class="btn btn-primary">Seite neu laden</button>
+            </div>
+            <div>
+                <p class="footer">© 2022 <a href="https://github.com/nebelkatz/removegap" rel="noopener" target="_blank">nebelkatz</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="popup.js"></script>
+</body>
+</html>
