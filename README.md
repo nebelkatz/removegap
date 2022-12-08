@@ -25,10 +25,32 @@ Beispiel einer markierten Ersetzung im Browser:
 ## Einschränkungen
 Es handelt sich um einen relativ einfachen Ersetzungsmechanismus, welcher schnell aus dem Konzept gebracht werden kann. Beispielsweise werden Genderstile, in welchen HTML-Auszeichnungen verwendet werden (bspw. Mitarbeiter&lt;strong&gt;*&lt;/strong&gt;in) nicht erkannt. Es ist auch nicht ausgeschlossen, dass es zu unvollständigen oder falschen Ersetzungen kommt.
 
-## Test
-Auf der [Beispielseite](doc/beispiele.md) sind verschiedene Beispiele aufgeführt.
+## Testen
+Die Erweiterung kann in der Regel im Developer-Modus lokal getestet werden. Dazu zuerst unter [Releases](https://github.com/nebelkatz/removegap/releases) die Zip-Datei des gewünschten Release und der Browser-Variante herunterladen.
 
-## Mitarbeit
+### Firefox
+1. In der Adresszeile `about:addons` eingeben
+2. Rechts auf das Zahnrad-Symbol klicken und im Kontext-Menu 'Debug Addon' wählen
+3. Auf der nächsten Seite (`about:debugging#/runtime/this-firefox`) die Schaltfläche __Temporäre Add-ons laden__ klicken
+4. Die heruntergeladene xpi-Datei wählen
+5. Das Add-on ist in der Toolbar des Browsers verfügbar.
+
+### Google Chrome
+1. Die heruntergeladene zip-Datei auf dem lokalen Laufwerk entpacken
+2. In der Adresszeile des Browsers `chrome://extensions/` eingeben
+3. Oben rechts im Fenster den `Entwickler Modus` einschalten. Darauf erscheinen rechts drei weitere Schaltflächen
+4. Links im Fenster die Schaltfläche `Ungepackt laden` klicken
+5. Den Ordner wählen, wo im Schritt 1 das ZIP entpackt wurde
+6. Die Extension wird nun angezeigt und muss allenfalls noch aktiviert werden. Die Optionen sind unter dem Icon der Erweiterung unter dem Puzzle-Symbol im der Toobar des Browsers verfügbar.
+
+### Microsoft Edge
+1. Die heruntergeladene zip-Datei auf dem lokalen Laufwerk entpacken
+2. In der Adresszeile des Browsers `edge://extensions/` eingeben
+3. Rest wie bei [Google Chrome](#google-chrome)
+
+Mit derinstallierten Extension auf die [Beispielseite](doc/beispiele.md) navigieren, welche verschiedene Beispiele enthält.
+
+## Mitarbeit, Rückmeldungen
 Hinweise, Verbesserungen und Anregungen und weitere Beispiele für die Testseite bitte per Issues und/oder pull requests.
 
 ## Artikel

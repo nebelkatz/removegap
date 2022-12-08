@@ -19,13 +19,14 @@
 const { series, parallel, src, dest } = require('gulp');
 const clean = require('gulp-clean');
 const zip = require('gulp-zip');
+var p = require('./package.json')
 
 function ucFirst(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function cleanZip(browser) {
-    return src('dist/RemoveGap_' + ucFirst(browser) + '.zip', { read: false, allowEmpty: true })
+function cleanZip() {
+    return src('dist/*RemoveGap_*.*', { read: false, allowEmpty: true })
         .pipe(clean());
 }
 
@@ -33,7 +34,7 @@ function firefox(cb) {
     cleanZip('firefox');
     src(['src/common/**', 'src/firefox/manifest.json'])
         .pipe(dest('dist/firefox'))
-        .pipe(zip('RemoveGap_Firefox.zip'))
+        .pipe(zip('v' + p.version + '_RemoveGap_Firefox.xpi'))
         .pipe(dest('dist'))
     cb();
 }
@@ -42,7 +43,7 @@ function chrome(cb) {
     cleanZip('edge');
     src('src/common/**')
         .pipe(dest('dist/chrome'))
-        .pipe(zip('RemoveGap_Chrome.zip'))
+        .pipe(zip('v' + p.version + '_RemoveGap_Chrome.zip'))
         .pipe(dest('dist'))
     cb();
 }
@@ -51,7 +52,7 @@ function edge(cb) {
     cleanZip('edge');
     src('src/common/**')
         .pipe(dest('dist/edge'))
-        .pipe(zip('RemoveGap_Edge.zip'))
+        .pipe(zip('v' + p.version + '_RemoveGap_Edge.zip'))
         .pipe(dest('dist'))
     cb();
 }
