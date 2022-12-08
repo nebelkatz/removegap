@@ -25,6 +25,9 @@ Beispiel einer markierten Ersetzung im Browser:
 ## Einschränkungen
 Es handelt sich um einen relativ einfachen Ersetzungsmechanismus, welcher schnell aus dem Konzept gebracht werden kann. Beispielsweise werden Genderstile, in welchen HTML-Auszeichnungen verwendet werden (bspw. Mitarbeiter&lt;strong&gt;*&lt;/strong&gt;in) nicht erkannt. Es ist auch nicht ausgeschlossen, dass es zu unvollständigen oder falschen Ersetzungen kommt.
 
+## Installation (Firefox)
+Das Firefox Browser Add-on steht unter [addons.mozilla.org](https://addons.mozilla.org/addon/removegap/) zum Download/Installation bereit.
+
 ## Testen
 Die Erweiterung kann in der Regel im Developer-Modus lokal getestet werden. Dazu zuerst unter [Releases](https://github.com/nebelkatz/removegap/releases) die Zip-Datei des gewünschten Release und der Browser-Variante herunterladen.
 
